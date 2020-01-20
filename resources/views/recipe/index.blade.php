@@ -8,7 +8,7 @@
                 <img src="{{ asset($recipe[0]->img_link) }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ $recipe[0]->name }}</h5>
-                    <a href="{{ route('welcome.show', $recipe[0]->id) }}" class="btn btn-secondary">Meer informatie</a>
+                    <a href="{{ route('recipe.show', $recipe[0]->id) }}" class="btn btn-secondary">Meer informatie</a>
                 </div>
             </div>
             <a href="">

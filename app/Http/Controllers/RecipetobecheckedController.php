@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class WelcomeController extends Controller
+class RecipetobecheckedController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,8 +13,7 @@ class WelcomeController extends Controller
      */
     public function index()
     {
-        $recipe = \App\Recipe::all()->random(1);
-        return view('recipe/index', ['recipe' => $recipe]);
+        //
     }
 
     /**
@@ -24,7 +23,7 @@ class WelcomeController extends Controller
      */
     public function create()
     {
-        //
+        return view('recipetobechecked/create');
     }
 
     /**
@@ -46,8 +45,7 @@ class WelcomeController extends Controller
      */
     public function show($id)
     {
-        $recipe = \App\Recipe::find($id);
-        return view('recipe/show', ['recipe' => $recipe]);
+        //
     }
 
     /**

@@ -5,16 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Dashboard</div>
+                <div class="card-header">Dashboard | Welkom: {{ Auth::user()->name }}</div>
 
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+                    <a href="{{ route('recipe.index') }}">
+                        <button type="button" class="btn btn-primary next-button">Recept goedkeuren (WIP)</button>
+                    </a>
                 </div>
             </div>
         </div>

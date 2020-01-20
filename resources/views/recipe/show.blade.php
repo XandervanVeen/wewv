@@ -10,7 +10,7 @@
                     <p>{{ $recipe->description }}</p>
                 </div>
             </div>
-            <a href="{{ route('welcome.index') }}">
+            <a href="{{ route('recipe.index') }}">
                 <button type="button" class="btn btn-primary next-button">Ga Terug</button>
             </a>
         </div>

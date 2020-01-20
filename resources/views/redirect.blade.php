@@ -1,4 +1,4 @@
-<a id="linkid" href="{{ route('welcome.index') }}"><a>
+<a id="linkid" href="{{ route('recipe.index') }}"><a>
 <script>
     window.onload=function(){
     document.getElementById("linkid").click();

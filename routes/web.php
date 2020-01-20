@@ -11,7 +11,7 @@
 |
 */
 Route::get('/', function(){
-    return view('test');
+    return view('redirect');
 });
 //Route::get('/', function () {
 //    route('test');
@@ -20,4 +20,5 @@ Route::get('/', function(){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('welcome', 'WelcomeController');
+Route::resource('recipe', 'RecipeController');
+Route::resource('recipetobechecked', 'RecipetobecheckedController');
